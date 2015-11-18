@@ -1,3 +1,12 @@
+// (document).on('ready', $(function(){
+//       $(".wrap").typed({
+//         strings: ["Motivational Posters"],
+//         typeSpeed: 0
+//       });
+//   }));
+
+
+
 $(document).on('submit', '#search-form', function(e) {
   e.preventDefault();
   var options = {
@@ -6,6 +15,8 @@ $(document).on('submit', '#search-form', function(e) {
   };
   findImagesOnGoogle(options);
 });
+
+
 
 $(document).on('click', '#search-results img', function(){
   var url = $(this).data('url');

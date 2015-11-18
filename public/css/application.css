@@ -1,48 +1,101 @@
 header {
-  padding: 15px;
-  background-color: rgba(255,255,255, 0.7);
-  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
+  padding-top: 15px;
+  margin-bottom: 30px;
+  color: white;
 }
 
 body {
-  background-image: url(/images/paven.png);
+  font-family: 'Nunito', sans-serif;
   text-align: center;
-  color: rgb(0, 51, 63);
-  font-family: Helvetica, Arial;
+  background-color: black;
+  color: black;
   margin: 0;
   padding: 0;
 }
 
+h2 {
+  font-size: 20px;
+}
+
+#search-term, #caption-text, input {
+    border: 0px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    min-height: 20px;
+}
+
+
+
+#search-term {
+  min-width: 300px;
+}
+
+#search-term, #go, #cap, #caption-text, #search-img, #search-form {
+  display: inline;
+}
+
+#go {
+  background-color: rgba(255, 255, 255, 0.0);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin-left: 10px;
+  padding: 2px, 100px, 2px, 100px;
+  color: white;
+  border-radius: 10%;
+  font-family: 'Nunito', sans-serif;
+}
+
+#go:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid white;
+}
+
+::-webkit-input-placeholder{
+	color: rgba(255,255,255,.3);
+}
+
+
+[placeholder]:focus::-webkit-input-placeholder {
+  color: rgba(255,255,255,.3);
+  transition: opacity 0.5s 0.4s ease;
+  opacity: 0;
+}
+
 #select-image {
-  background-color: rgba(255, 255, 255, 0.3);
   padding: 15px;
 }
 
 #add-text {
-  background-color: rgba(0, 255, 255, 0.02);
-  padding: 10px;
-  box-shadow: 1px, 0, 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
 }
 
 #caption-text {
-  width: 600px;
-  text-align: center;
+  width: 380px;
 }
 
 input {
   font-size: 16px;
+  padding-left: 5px;
 }
 
 #style-caption {
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
-  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.3);
+}
+
+#contain {
+  color: white;
+  opacity: 0;
+  -webkit-animation: flicker 1s 1s forwards;
+}
+
+#title {
+  opacity: 0;
+  -webkit-animation: flicker 1s 0s forwards;
 }
 
 #workspace {
   width: 600px;
   min-height: 300px;
-  border: 5px dashed rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.2);
   margin: 0 auto;
   position: relative;
 }
@@ -56,10 +109,10 @@ input {
   top: 10px;
   left: 10px;
   font-weight: bold;
-  font-family: Helvetica;
+  font-family: 'Nunito', sans-serif;
   text-shadow: 0 0 5px rgba(0,0,0,0.4);
   width: 400px;
-  font-size: 32px;
+  font-size: 20px;
   color: red;
   margin: 0;
 }
@@ -73,6 +126,8 @@ input {
   width: 50px;
 }
 
+
+
 footer {
   background-color: rgba(255, 0, 255, 0.01);
   padding: 10px;
@@ -83,7 +138,7 @@ footer {
 
 #footer {
   margin: 0 auto;
-  width: 800px;
+  width: 850px;
 }
 
 footer img {
@@ -92,6 +147,52 @@ footer img {
   width: 240px;
 }
 
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+#twitter {
+  margin: 20px;
+}
+
 footer div {
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
+}
+
+
+h1 {
+  padding: 0;
+  margin-bottom: 35px;
+  color: white;
+}
+
+#sizer {
+  width: 60%;
+  margin: auto;
+}
+
+
+#bottom-slide {
+  height: 1px;
+  margin: 0;
+  background-color: white;
+  width: 0;
+  -webkit-animation: slide 1.5s 0s forwards;
+}
+
+#search-results {
+  max-height: 150px;
+  margin-top: 10px;
+}
+
+@-webkit-Keyframes flicker {
+	100% {opacity: 1;}
+}
+
+
+@-webkit-Keyframes slide {
+	100% {width: 100%;}
 }
