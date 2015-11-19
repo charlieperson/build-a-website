@@ -126,6 +126,7 @@ input {
   border: 3px solid rgba(255, 255, 255, 1);
   margin: 0 auto;
   position: relative;
+  word-wrap: break-word;
 }
 
 #workspace img {
@@ -141,7 +142,7 @@ input {
   text-shadow: 0 0 5px rgba(0,0,0,0.4);
   width: 400px;
   font-size: 20px;
-  color: red;
+  color: white;
   margin: 0;
 }
 
