@@ -182,13 +182,32 @@ footer {
     font-size: 12px;
 }
 
-#twitter {
-  margin: 20px;
+
+
+.fb-share-button span{
+  vertical-align: baseline;
+  height: 50px;
 }
+
+#tweet-div {
+  padding-top: 20px;
+  display: inline-block;
+}
+
+#social {
+  height: 20px;
+}
+
 
 footer div {
   margin: 10px 0;
 }
+/*
+iframe {
+  margin: 0;
+  padding: 0;
+  max-height: 28px;
+}*/
 
 
 h1 {
