@@ -187,6 +187,7 @@ footer {
 .fb-share-button span{
   vertical-align: baseline;
   height: 50px;
+  float: left;
 }
 
 #tweet-div {
